@@ -1,0 +1,156 @@
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-line {
+  width: 80px;
+  height: 4px;
+  background-color: #3498db;
+  margin: 0 auto;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: scaleIn 0.6s ease-out 0.4s forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.about-section.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-section:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.about-section:nth-child(even).animate {
+  transform: translateX(0);
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease 0.3s;
+}
+
+.about-section.animate h2::after {
+  transform: scaleX(1);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.about-section.animate p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mission-section {
+  transition-delay: 0.1s;
+}
+.expertise-section {
+  transition-delay: 0.2s;
+}
+.community-section {
+  transition-delay: 0.3s;
+}
+.solutions-section {
+  transition-delay: 0.4s;
+}
+
+.about-section:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    transform: translateY(30px) !important;
+  }
+  
+  .about-section.animate {
+    transform: translateY(0) !important;
+  }
+}

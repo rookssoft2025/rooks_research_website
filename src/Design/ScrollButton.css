@@ -1,0 +1,57 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0B3470, #000000);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 20px;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+ 
+  .whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 15px;
+    background-color: #1fa04f;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    animation: floatUpDown 2s ease-in-out infinite;
+  }
+  
+  
+  
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

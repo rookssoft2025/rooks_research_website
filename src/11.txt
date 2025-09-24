@@ -1,0 +1,15 @@
+<Route path="/" element={<SchoolNews />} />
+<Route path="/academic-assistance" element={<AcademicAssistance />} />
+        <Route path="/research-services" element={<ResearchServices />} />
+        <Route path="/rrc-design" element={<RRCDesign />} />
+        <Route path="/phd-research" element={<PhDResearchWebsite />} />
+         {/* Journal-related routes */}
+         {/* <Route path="/splashscreen" element={<SplashScreen />} /> */}
+         <Route path="/journal-portal" element={<JournalPortal />} />
+        <Route path="/journal-login" element={<JournalLogin />} />
+        <Route path="/journal-dashboard" element={<JournalDashboard />} />
+
+        {/* Client-related routes */}
+        <Route path="/client-login" element={<ClientLogin/>} />
+        <Route path="/client-review" element={<ClientReview />} />
+        <Route path="/support-services" element={<SupportServices/>}></Route>

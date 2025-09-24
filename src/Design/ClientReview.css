@@ -1,0 +1,23 @@
+.client-review-layout .dashboard-card {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 24px;
+  }
+  
+  .client-info {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .status-submitted {
+    color: green;
+  }
+  
+  .status-pending {
+    color: orange;
+  }
+  
+  .status-rejected {
+    color: red;
+  }
+  

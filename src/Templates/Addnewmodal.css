@@ -1,0 +1,473 @@
+.frame {
+    align-items: stretch;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 676px;
+    height: auto;
+    max-height: calc(100vh - 64px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+
+.frame .div-wrapper {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .text-wrapper {
+    color:  #0B3470;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .div {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-wrapper-2 {
+    align-items: center;
+    align-self: stretch;
+    background-color: #eff9fb;
+    border-color: #004767;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    height: 48px;
+    padding: 12px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .text-wrapper-2 {
+    color: #004767;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .frame-wrapper {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.frame .div-3 {
+    align-items: center;
+    background-color: #eff9fb;
+    border-color: #004768;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-4 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-5 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.frame .div-6 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 5px;
+    position: relative;
+}
+
+.frame .div-wrapper-3 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.frame .text-wrapper-3 {
+    color: #004767;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .div-wrapper-4 {
+    align-items: center;
+    background-color: #ffffff;
+    border-color: #004768;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    height: 38px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+.frame .text-wrapper-4 {
+    color: #004767;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -2.50px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .div-7 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-wrapper-5 {
+    align-items: center;
+    background-color: #ffffff;
+    border-color: #004768;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}
+
+.frame .text-wrapper-5 {
+    color: #004767;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -3.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .minus {
+    align-items: center;
+    aspect-ratio: 1.02;
+    background-color: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 38px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 11px 3px;
+    position: relative;
+    width: 39px;
+}
+
+.frame .vector {
+    height: 1.5px;
+    position: relative;
+    width: 18px;
+}
+
+.frame .div-8 {
+    color: white;
+    align-items: center;
+    align-self: stretch;
+    background: linear-gradient(135deg, #0B3470, #000000);
+    /* background-color: #78a0b1; */
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    height: 38px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.frame .plus {
+    aspect-ratio: 1;
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.frame .img {
+    height: 75.00%;
+    left: 12.50%;
+    position: absolute;
+    top: 12.50%;
+    width: 75.00%;
+}
+
+.frame .text-wrapper-6 {
+    color: white;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .div-wrapper-6 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #eff9fb;
+    border-color: #004768;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    height: 136px;
+    padding: 12px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .text-wrapper-7 {
+    color: #004767;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -4.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .div-9 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 30px;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.frame .div-wrapper-7 {
+    align-items: center;
+    border: 1px solid;
+    border-color: #004768;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 150px;
+}
+
+.frame .text-wrapper-8 {
+    color: #004768;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.frame .div-wrapper-8 {
+    align-items: center;
+    background: linear-gradient(135deg, #0B3470, #000000);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 150px;
+}
+
+.frame .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+  padding-left: calc(16px + env(safe-area-inset-left, 0px));
+  padding-right: calc(16px + env(safe-area-inset-right, 0px));
+  padding-top: calc(16px + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+}
+/* Add to: d:\Websites\RRC New Website\rrc\src\Templates\Addnewmodal.css */
+.custom-input {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #fafbfc;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 0;
+  position: relative;
+  width: min(676px, 92vw);
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@supports (height: 100dvh) {
+  .modal-overlay { height: 100dvh; }
+  .modal-content { max-height: 92dvh; }
+  .frame { max-height: calc(100dvh - 64px); }
+}
+
+@media (max-width: 600px) {
+  .frame {
+    border-radius: 16px;
+    padding: 8px;
+    max-height: calc(100vh - 32px);
+  }
+  .frame .text-wrapper {
+    font-size: 24px;
+  }
+  .frame .div-3 {
+    gap: 12px;
+  }
+  .frame .div-wrapper-2 {
+    height: auto;
+    padding: 10px;
+  }
+  .frame .div-9 {
+    gap: 12px;
+    justify-content: stretch;
+  }
+  .frame .div-wrapper-7,
+  .frame .div-wrapper-8 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+.frame .div-wrapper-3 {
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+   
+}
+}

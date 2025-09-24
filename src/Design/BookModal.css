@@ -1,0 +1,81 @@
+.book-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+  }
+  
+  .book {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    background: #fefae0;
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    animation: openBook 0.6s ease-out;
+  }
+  
+  .book-left-page,
+  .book-right-page {
+    width: 50%;
+    padding: 30px;
+    overflow-y: auto;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #fffef0;
+    border-right: 1px solid #d6ccc2;
+  }
+  
+  .book-right-page {
+    border-left: 1px solid #d6ccc2;
+  }
+  
+  .book h2 {
+    margin-top: 0;
+    color: #6b4226;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #d6ccc2;
+    padding-bottom: 10px;
+  }
+  
+  .book ul {
+    padding-left: 20px;
+  }
+  
+  .book li {
+    margin-bottom: 12px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #6b4226;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  @keyframes openBook {
+    from {
+      transform: scale(0.8) rotateY(-15deg);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) rotateY(0);
+      opacity: 1;
+    }
+  }
+  

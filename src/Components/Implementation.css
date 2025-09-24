@@ -1,0 +1,42 @@
+.implementation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .main1-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00509d;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #003f5c;
+    margin-bottom: 10px;
+  }
+  
+  .list {
+    padding-left: 20px;
+    line-height: 1.8;
+  }
+  
+  .list li {
+    margin-bottom: 8px;
+  }
+  

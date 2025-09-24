@@ -1,0 +1,147 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-container {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to bottom right, #eef2f7, #fdfdfd);
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.main-title {
+  text-align: center;
+  color: #1f2d3d;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
+  animation: fadeInUp 1s ease-in-out 0.2s both;
+}
+
+.service-card {
+  margin-top: 50px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #dde3ea;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease-in-out both;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2.25rem;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  position: relative;
+  
+}
+
+
+.my-button {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #000000, #0B3470);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.my-button:hover {
+  background-color: #45A049;
+}
+.service-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.85rem;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.service-card li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #10b981;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card li:hover::before {
+  transform: scale(1.2);
+  color: #22c55e;
+}
+
+
+
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 2.3rem;
+  }
+  .service-card {
+    padding: 1.75rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  .service-card {
+    padding: 1.5rem 1.5rem;
+  }
+  .service-card h2 {
+    font-size: 1.5rem;
+  }
+  .service-card li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.75rem;
+  }
+  .service-card {
+    padding: 1.25rem;
+  }
+  .service-card h2 {
+    font-size: 1.25rem;
+  }
+  .service-card li {
+    font-size: 0.9rem;
+  }
+}

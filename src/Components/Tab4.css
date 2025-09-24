@@ -1,0 +1,231 @@
+/* General Styles */
+.sci-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.heroTab4-section {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content Cards */
+.infoTab4-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sectionTab4-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3c72;
+  display: flex;
+  align-items: center;
+}
+
+.iconTab4 {
+  margin-right: 15px;
+  color: #2a5298;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Importance Grid */
+.importance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.importance-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.importance-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.importance-icon {
+  font-size: 2rem;
+  color: #2a5298;
+  margin-bottom: 15px;
+}
+
+.importance-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1e3c72;
+}
+
+/* Steps Container */
+.steps-container {
+  margin-top: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.step:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.stepTab4-number {
+  background: #2a5298;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.stepTab4-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #1e3c72;
+}
+
+/* Process Steps */
+.process-steps {
+  margin-top: 40px;
+}
+
+.processTab4-item {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.processTab4-icon {
+  background: #f0f4f8;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a5298;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.processTab4-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1e3c72;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .sectionTab4-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .iconTab4 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  
+  .step {
+    flex-direction: column;
+  }
+  
+  .stepTab4-number {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  
+  .processTab4-item {
+    flex-direction: column;
+  }
+  
+  .processTab4-icon {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+/* Animation Delays for AOS */
+[data-aos-delay="100"] {
+  transition-delay: 100ms;
+}
+
+[data-aos-delay="200"] {
+  transition-delay: 200ms;
+}
+
+[data-aos-delay="300"] {
+  transition-delay: 300ms;
+}
+
+[data-aos-delay="400"] {
+  transition-delay: 400ms;
+}
+
+[data-aos-delay="500"] {
+  transition-delay: 500ms;
+}
+
+[data-aos-delay="600"] {
+  transition-delay: 600ms;
+}
+
+[data-aos-delay="700"] {
+  transition-delay: 700ms;
+}

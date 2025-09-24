@@ -1,0 +1,93 @@
+.thank-you-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+  
+  .thank-you-modal-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 24rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .dark .thank-you-modal-content {
+    background-color: #1f2937;
+    border-color: #374151;
+  }
+  
+  .thank-you-modal-icon {
+    margin-bottom: 1.5rem;
+  }
+  
+  .thank-you-modal-icon svg {
+    width: 4rem;
+    height: 4rem;
+    color: #0B3470;
+  }
+  
+  .thank-you-modal-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #0B3470;
+    margin-bottom: 1rem;
+  }
+  
+  .thank-you-modal-message {
+    color: #374151;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  .dark .thank-you-modal-message {
+    color: #d1d5db;
+  }
+  
+  .thank-you-modal-message strong {
+    color: #0B3470;
+    font-weight: 600;
+  }
+  
+  .dark .thank-you-modal-message strong {
+    color: #0B3470;
+  }
+  
+  .thank-you-modal-button {
+    background-color: #0B3470;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .thank-you-modal-button:hover {
+    background-color: #2b4770;
+    transform: scale(1.05);
+  }
+  
+  .thank-you-modal-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.3);
+  }

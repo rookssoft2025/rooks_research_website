@@ -1,0 +1,204 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background : linear-gradient(to left, #0B3470, #000000);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navbar-logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-logo a:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-icon:hover {
+    color: #3498db;
+    transform: rotate(90deg);
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+    color: #3498db;
+  }
+  
+  
+  .navbar-links a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-links a:hover {
+    color: #3498db;
+    transform: translateY(-3px);
+  }
+  
+
+  .contact-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 150%;
+    left:-100px;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    min-width:200px;
+    /* opacity: 0; */
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: all 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1000;
+    background: linear-gradient(90deg, #000000, #0B3470);
+  }
+  
+  .contact-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  
+  .dropdown-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 10px;
+ 
+    color: #ffffff;
+    
+  }
+  
+ 
+  @media (max-width: 992px) {
+    
+    .navbar-links a{
+        color: black;
+    }
+    .menu-icon {
+      display: block;
+      z-index: 1001;
+    }
+    
+    .navbar-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 350px;
+      background-color: rgb(255, 255, 255);
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      overflow: scroll;
+      
+    }
+    
+    .navbar-links.active {
+      right: 0;
+      
+    }
+    
+    .contact-dropdown {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      padding: 0;
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+      margin-top: 1rem;
+      background: none;
+    }
+    
+    .navbar-links.active .contact-dropdown:hover .dropdown-menu,
+    .navbar-links.active .dropdown-menu {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .dropdown-menu a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000000;
+      
+    }
+    
+    
+    .dropdown-menu a:hover {
+      background-color: transparent;
+      padding-left: 0.5rem;
+    }
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  *, *::before, *::after {
+    transition: all 0.2s ease;
+  }

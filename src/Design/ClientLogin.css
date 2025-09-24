@@ -1,0 +1,87 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .login-card {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    background: #0B3470;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .welcome-section {
+    flex: 1;
+    padding: 40px;
+    background : linear-gradient(to left, #0B3470, #ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  .welcome-text {
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  
+  .welcome-image {
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-header {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .form-title {
+    margin-bottom: 8px !important;
+  }
+  
+  .login-form {
+    width: 100%;
+  }
+  
+
+  @media (max-width: 768px) {
+    .login-card {
+      flex-direction: column;
+    }
+    
+    .welcome-section {
+      padding: 30px 20px;
+    }
+    
+    .form-section {
+      padding: 30px 20px;
+    }
+    
+    .welcome-image {
+      display: none;
+    }
+  }
+
+  .ant-btn-block {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background : rgb(238, 227, 210);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+  } 
+  

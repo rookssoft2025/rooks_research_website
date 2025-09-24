@@ -1,0 +1,163 @@
+/* Modal container as simple card */
+.create-user-modal {
+
+  width: auto;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+  top: 17%;
+  right:20%;
+  background:white;
+  padding: 20px;
+}
+
+/* Modal header */
+.modal-header {
+    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 16px; */
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* Close button */
+.create-user-close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555555;
+  font-size: 1.2rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.15s;
+  /* margin-bottom: 50px; */
+ 
+}
+
+.create-user-close-button:hover {
+  background: #f3f3f3;
+}
+
+/* Form container */
+.create-user-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+}
+
+/* Input fields */
+.create-user-form-input {
+ width: 100%;
+  padding: 0.5rem 1rem 0.5rem 1.25rem; /* py-2 px-4 pl-5 */
+  background-color: #eff9fb;
+  border-left-width: 4px;
+  border-radius: 0.5rem; /* rounded-lg */
+  border-style: solid;
+  border-left-color: #004767; /* default border left */
+  color: #004767;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  
+}
+
+.create-user-form-input:focus {
+  border-color: #004767;
+}
+
+/* Floating label */
+.input-label {
+  position: absolute;
+  left: 1.5rem; /* left-6 */
+  top: 0.75rem; /* top-3 */
+  font-size: 0.875rem; /* text-sm */
+  color: #004767;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  
+}
+.form-input.error {
+  border-left-color: #ef4444; /* red-500 */
+  border-color: #fecaca; /* red-300 */
+}
+
+.input-label.hidden {
+  display: none;
+}
+
+/* Error state */
+.error {
+  border-color: #d93636;
+}
+
+.error-message {
+  font-size: 0.84rem;
+  color: #d93636;
+  margin: 3px 0 0 8px;
+}
+
+/* Password toggle button */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  font-size: 1.1rem;
+  color: #555;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+/* Buttons container */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Cancel button */
+.create-user-cancel-button {
+  background: #f6f6f6;
+  border: 1.5px solid #a1a1a1;
+  padding: 8px 24px;
+  border-radius: 8px;
+  color: #555;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.create-user-cancel-button:hover {
+  background: #e1e1e1;
+}
+
+/* Create button */
+.create-user-submit-button {
+  background: #4a90e2;
+  border: none;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0B3470, #000000);
+  transition: background 0.15s ease;
+}
+
+.create-user-submit-button:hover {
+  background: #357ABD;
+}

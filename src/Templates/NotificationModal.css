@@ -1,0 +1,253 @@
+/* Modal overlay */
+.notifications-modal-overlay {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+/* Modal container */
+.notifications-modal-container {
+    width: 100%;
+    max-width: 20rem; /* 320px */
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Contain internal scroll areas */
+    max-height: calc(100vh - 2rem); /* Keep within viewport */
+}
+
+/* Prevent overflow in modal by ensuring border-box sizing */
+.notifications-modal-container,
+.notifications-modal-container * {
+    box-sizing: border-box;
+}
+
+/* Prefer dynamic viewport height on supported browsers */
+@supports (height: 100dvh) {
+    .notifications-modal-container {
+        max-height: calc(100dvh - 2rem);
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal header */
+.notifications-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.notifications-modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+}
+
+.notifications-close-button {
+    color: rgb(156, 163, 175);
+    padding: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.notifications-close-button:hover {
+    color: rgb(75, 85, 99);
+}
+
+.notifications-close-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Tab container */
+.notifications-tab-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Tab buttons */
+.notifications-tab-button {
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.notifications-tab-button.active {
+    background-color: #EFF9FB;
+    color: black;
+}
+
+.notifications-tab-button.inactive {
+    background-color: #009BE1;
+    color: white;
+}
+
+/* Notifications container */
+.notifications-container {
+    flex: 1 1 auto; /* Grow to fill remaining space */
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #EFF9FB;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.notifications-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Notification item */
+.notification-item {
+    padding: 0.75rem;
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.notification-item.read {
+    background-color: rgba(206, 206, 206, 0.2);
+}
+
+.notification-item.unread {
+    background-color: #EFF9FB;
+}
+
+/* Notification header */
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-user {
+    font-weight: 600;
+    color: rgb(31, 41, 55);
+    overflow-wrap: anywhere;
+}
+
+.notification-time {
+    font-size: 0.875rem;
+    color: rgb(156, 163, 175);
+}
+
+/* Notification message */
+.notification-message {
+    color: rgb(55, 65, 81);
+    font-size: 0.875rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    margin-bottom: 0.5rem;
+}
+
+/* Action buttons container */
+.notifications-action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* Decline button */
+.notifications-decline-button {
+    flex: 1 1 40%;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgb(59, 130, 246);
+    color: rgb(59, 130, 246);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.notifications-decline-button:hover {
+    background-color: rgb(239, 246, 255);
+}
+
+/* Accept button */
+.notifications-accept-button {
+    flex: 1 1 40%;
+    padding: 0.25rem 0.5rem;
+    background: linear-gradient(to right, #00326A, #000204);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .notifications-modal-overlay {
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    .notifications-modal-container {
+        width: 100%;
+        max-width: 100vw;
+        min-height: 40vh;
+        padding: 1rem;
+        border-radius: 0.75rem 0.75rem 0 0;
+        box-shadow: 0 8px 24px -4px rgba(0,0,0,0.23);
+        margin-bottom: 0;
+    }
+    .notifications-container {
+        min-height: 10rem;
+        max-height: 60vh;
+    }
+    .notifications-modal-header {
+        font-size: 1rem;
+    }
+    .notifications-tab-button {
+        padding: 0.5rem 0.65rem;
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .notifications-modal-container {
+        padding: 0.6rem;
+        min-height: 33vh;
+    }
+    .notification-item {
+        padding: 0.6rem 0.2rem;
+    }
+}

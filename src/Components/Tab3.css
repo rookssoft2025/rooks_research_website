@@ -1,0 +1,300 @@
+
+.ugc-care-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .ugc-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .ugc-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .titleTab-decoration {
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  .ugc-section {
+    margin-bottom: 40px;
+  }
+  
+  .infoTab3-card {
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .infoTab3-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-purple {
+    background: linear-gradient(90deg, #000000, #0B3470);
+    color: white;
+  }
+  
+  .card-blue {
+    background: linear-gradient(90deg, #0b397e, #000000);
+    color: white;
+  }
+  
+  .card-green {
+    background: linear-gradient(90deg, #3f3f3f, #0c336d);
+    color: white;
+  }
+  
+  .card-orange {
+    background: linear-gradient(90deg, #000000, #0B3470);
+    color: white;
+  }
+  
+  .sectionTab3-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sectionTab3-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    margin-right: 15px;
+    font-size: 1.5rem;
+  }
+  
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .category-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-group-a {
+    border-top: 5px solid #e74c3c;
+  }
+  
+  .card-group-b {
+    border-top: 5px solid #3498db;
+  }
+  
+  .card-group-c {
+    border-top: 5px solid #f39c12;
+  }
+  
+  .card-group-d {
+    border-top: 5px solid #2ecc71;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .category-content {
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .category-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+
+  .processTab3-steps {
+    margin-top: 30px;
+  }
+  
+  .processTab3-step {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+  }
+  
+  .stepTab3-number {
+    background: white;
+    color: #27ae60;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .stepTab3-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .stepTab3-content p {
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+
+  .check-steps {
+    margin-top: 20px;
+  }
+  
+  .check-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .check-icon {
+    margin-right: 15px;
+    font-size: 1.3rem;
+    color: #f1c40f;
+  }
+  
+ 
+  .animate-pop-in {
+    animation: popIn 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  }
+  
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .animate-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease forwards;
+  }
+  
+  .animate-bounce-in {
+    opacity: 0;
+    animation: bounceIn 0.8s ease forwards;
+  }
+  
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .ugc-title {
+      font-size: 2rem;
+    }
+    
+    .sectionTab3-title {
+      font-size: 1.5rem;
+    }
+    
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+      flex-direction: column;
+    }
+    
+    .stepTab3-number {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }

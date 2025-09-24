@@ -1,0 +1,164 @@
+/* RRCDesign.css */
+
+/* Base Styles */
+.rrc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .rrc-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .rrc-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+  }
+  
+  .rrc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .rrc-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .rrc-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    transition: height 0.3s ease;
+  }
+  
+  .rrc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+  
+  .rrc-card:hover::before {
+    height: 10px;
+  }
+  
+  .rrc-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .rrc-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+  }
+  
+  .rrc-card p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* Icon Styling (Optional - if you add icons later) */
+  .rrc-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #3498db;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .rrc-title {
+      font-size: 2.2rem;
+    }
+    
+    .rrc-grid {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .rrc-container {
+      padding: 3rem 1.5rem;
+    }
+    
+    .rrc-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .rrc-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .rrc-title {
+      font-size: 1.8rem;
+    }
+    
+    .rrc-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .rrc-card {
+      padding: 1.5rem 1.2rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .rrc-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  .rrc-card:nth-child(1) { animation-delay: 0.1s; }
+  .rrc-card:nth-child(2) { animation-delay: 0.2s; }
+  .rrc-card:nth-child(3) { animation-delay: 0.3s; }
+  .rrc-card:nth-child(4) { animation-delay: 0.4s; }
